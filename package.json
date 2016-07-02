@@ -1,0 +1,18 @@
+{
+  "name": "cloud-fs",
+  "description": "Keep assets in the cloud.",
+  "repository": "git://github.com/joshrtay/cloud-fs.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "farmhash": "^1.1.1",
+    "stack-trace": "0.0.9"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
