@@ -5,6 +5,7 @@
 const test = require('tape')
 const cloudFS = require('..')
 const {join} = require('path')
+const fs = require('fs')
 
 /**
  * Tests
@@ -24,11 +25,9 @@ test('should work with relative path', (t) => {
   t.end()
 })
 
-test('should be able to listen to adds', (t) => {
+test('should write to assets dir', (t) => {
   cloudFS.loadCache({})
-  cloudFS.on('read', url => {
-    t.equal(url, ELLIOT_URL)
-    t.end()
-  })
   cloudFS.url('./elliot.jpg')
+  t.ok(fs.existsSync(join(process.cwd(), ELLIOT_URL)))
+  t.end()
 })

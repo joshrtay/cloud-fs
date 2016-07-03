@@ -15,17 +15,21 @@ Keep assets in the cloud.
 ## Usage
 
 ```js
-var cloudFs = require('cloud-fs')
-
+const {url} = require('cloud-fs')
+const faviconURL = url('./favicon.ico')
 ```
 
 ## API
 
-### cloudFs(arg)
+### .url(file)
 
-- `arg` -
+- `file` - relative or absolute path to file
 
-**Returns:**
+**Returns:** url for file
+
+### .loadCache(cache)
+
+- `cache` - new cache of files to urls
 
 ## License
 

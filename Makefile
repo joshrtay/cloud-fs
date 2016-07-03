@@ -11,6 +11,7 @@ BIN = ./node_modules/.bin
 
 test:
 	@node test/*.js
+	@rm -r assets
 
 validate:
 	@standard
