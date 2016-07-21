@@ -26,7 +26,6 @@ test('should work with relative path', (t) => {
 })
 
 test('should write to assets dir', (t) => {
-  cloudFS.loadCache({})
   cloudFS.url('./elliot.jpg')
   t.ok(fs.existsSync(join(process.cwd(), ELLIOT_URL)))
   t.end()
