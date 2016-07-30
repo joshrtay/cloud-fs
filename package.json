@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "farmhash": "^1.1.1",
-    "find-root": "^1.0.0",
     "mkdirp": "^0.5.1",
+    "rework": "^1.0.1",
+    "rework-plugin-url": "^1.1.0",
     "stack-trace": "0.0.9"
   },
   "devDependencies": {
