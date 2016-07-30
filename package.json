@@ -2,7 +2,7 @@
   "name": "cloud-fs",
   "description": "Keep assets in the cloud.",
   "repository": "git://github.com/joshrtay/cloud-fs.git",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
