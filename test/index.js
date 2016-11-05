@@ -38,3 +38,8 @@ test('should write css to dir and rewrite url', (t) => {
   t.ok(fs.readFileSync(join(process.cwd(), CSS_URL)).indexOf(ELLIOT_URL) > 0)
   t.end()
 })
+
+test('should handle query string', (t) => {
+  t.equal(cloudFS.url('./elliot.jpg?small'), `${ELLIOT_URL}?small`)
+  t.end()
+})
